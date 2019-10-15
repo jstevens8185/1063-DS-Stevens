@@ -33,9 +33,9 @@ ListStack::ListStack() {
  * Returns:
  *     void
  */
-void ListStack::Push(Animal *A) {
+void ListStack::Push(Animal* A) {
     // allocate new memory
-    Node *anode = new Node(A);        // Allocate new memory
+    Node* anode = new Node(A);        // Allocate new memory
 
     // check if list is empty
     if (!Top) {
