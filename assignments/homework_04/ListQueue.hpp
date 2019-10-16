@@ -2,7 +2,7 @@
  * ListQueue.hpp
  * 
  * List Based Queue definition and implementation.
- * Author: Terry Griffin
+ * Author: Jered Stevens / Terry Griffin
  * Date: Oct 2019
  */
 #include <iostream>

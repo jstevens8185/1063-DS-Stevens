@@ -24,7 +24,7 @@ int main() {
   ifstream in;
   in.open("input_data.txt");
   ofstream out;
-  out.open("stack_out.txt");
+  out.open("stack_out.csv");
 
   //Header
   out << "Jered Stevens" << endl
