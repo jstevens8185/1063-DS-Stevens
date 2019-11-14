@@ -190,7 +190,7 @@ int main(){
 /*  Set variables
 *   1. one will contain how many ops are to be performed
 *   2. one will be a char to hold the operator
-*   3. the other will have one # at a time to be pushed onto a list
+*   3. two strings to hold the really big numbers
 */
 
     int howMany;
@@ -220,48 +220,4 @@ int main(){
     result.add(test1, test2);
     result.print(outptr);
 
-/*   We need three lists.
-*   1. The first will hold the first bigass #
-*   2. The second will hold the next bigass #
-*   3. The third will hold the result.
-*   all three should be emptied before the next operation
-*/
-
-    //BigNums ban1;
-   // BigNums ban2;
-   // BigNums bar; //(big ass result)
-
-    //cout << howMany;
-//     for(int i = 0; i < 10; i++){
-//         ban1.push(i);
-//     };
-
-//     ban1.print();
-
  }
-
-/*void BigNums::push(int x){
-    Node *n = new Node(x);
-
-    //if its NOT empty do something
-    if(head!=NULL){
-        tail->next = n;
-        tail = n;
-    }
-    //if its empty do something different
-    //this is second because it will happen less often    
-    else{
-        head = n;
-        tail = n;
-    }
-};
-
-void BigNums::print(){
-    Node* temp = head;
-    
-    while(temp->next != NULL){
-        cout << temp->data;
-        temp = temp->next;
-    };
-};
-*/
