@@ -13,7 +13,7 @@ int main() {
     Num1->Print();
     Num2->Print();
 
-    DLList* Result = BN.Add(Num1,Num2);
+    DLList* Result = BN.Sub(Num1,Num2);
 
 
 

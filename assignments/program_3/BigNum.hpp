@@ -68,7 +68,36 @@ public:
         return Result;
     }
 
-    DLList* Sub(DLList *bnum1, DLList *bnum2);
+    DLList* Sub(DLList *bnum1, DLList *bnum2){
+        BNum1 = bnum1;
+        BNum2 = bnum2;
+
+        int num1=0;
+        int num2=0;
+        int borrow=0;
+        int diff=0;
+
+        DLList* Result = new DLList();
+
+        while((!BNum1->isEmpty()) || (!BNum2->isEmpty())){
+            if((!BNum1->isEmpty()) && (!BNum2->isEmpty())){
+                num1 = BNum1->Delete();
+                num2 = BNum2->Delete();
+                if(!(num1 < num2)){
+                    diff = num1 - num2 - borrow;
+                    borrow = 0;
+                }else if(num1 < num2){
+                    num1 += 10;
+                    diff = num1 - num2 - borrow;
+                    borrow = 1;
+                }else{
+                    cout << "Something went wrong" << endl;
+                }
+            }
+            Result->frontSert(diff);
+        }
+        return Result;
+    };
     /**
      * Multiply some other BigNum with this BigNum and return the
      * result (as a BigNum). The original two BigNums should be unaffected.
