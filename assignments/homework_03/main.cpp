@@ -3,7 +3,7 @@
  * 
  * List based Stack that holds an animal type
  * 
- * Author: Terry Griffin
+ * Author: Jered Stevens/Terry Griffin
  * Date: Oct 4th ish 2019
  */
 #include "ListStack.h"    // include our stack definition
