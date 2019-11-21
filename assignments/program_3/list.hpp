@@ -35,8 +35,8 @@ public:
     DLList(const DLList &);     // Copy Constructor
     ~DLList();                  // Destructor
     int Size();                 // returns size of list
-    void frontSert(int);      // inserts in front
-    void endSert(int);       // inserts in back
+    void frontSert(int);        // inserts in front
+    void endSert(int);          // inserts in back
     void Print();               // prints contents of list in order
     void RevPrint();            // prints contents of list in reverse order
     int Delete();               // deletes and returns tail. moves tail to tail->prev
