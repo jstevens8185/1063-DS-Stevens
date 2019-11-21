@@ -93,6 +93,8 @@ public:
                 }else{
                     cout << "Something went wrong" << endl;
                 }
+            }else if((!BNum1->isEmpty()) && (BNum2->isEmpty())){
+                
             }
             Result->frontSert(diff);
         }
