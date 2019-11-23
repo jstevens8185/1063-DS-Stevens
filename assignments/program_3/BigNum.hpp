@@ -106,8 +106,8 @@ public:
             }
             Result->frontSert(num1);
         }
-        bnum1->Print();
-        cout << endl;
+        //bnum1->Print();
+        //cout << endl;
         return Result;
     };
     /**
@@ -129,7 +129,7 @@ public:
             DLList* result = new DLList();
             int c = 0;
             BNum1 = new DLList(*bnum1); 
-            BNum2->Print();
+            //BNum2->Print();
             bottom = BNum2->Delete();
             
             for(int i = 0; i<k; i++){
