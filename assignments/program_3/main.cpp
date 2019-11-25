@@ -1,4 +1,12 @@
-
+////////////////////////////////////////////////////////////
+//                  Program_03
+//  Author:     Jered Stevens
+//  Date:       Nov 24 2019
+//  Assignment: Program_03
+//  What I Do:
+//          Reads in an operation sign and VERY large numbers 
+//          from a file and performs arithmetic on them
+/////////////////////////////////////////////////////////////
 
 #include <iostream>
 #include <fstream>
@@ -13,19 +21,29 @@ int main() {
     ofstream& outref = out;
     out.open("output.txt");
     in.open("input.txt");
-    int numOps;
-    char operation;
-    string num1, num2;
-    BigNum BN;
-    DLList* result = new DLList();
-    DLList* Num1;
-    DLList* Num2;
-    string banana;
-    in>>numOps;
-
+    int numOps;                     //get the number of times to run
+    char operation;                 //get the first operation to perform
+    string num1, num2;              //variable to hold the numbers
+    BigNum BN;                      //class that can interact with the numbers
+    DLList* result = new DLList();  //place to store final answers
+    DLList* Num1;                   //list for first number
+    DLList* Num2;                   //""  ""   2nd   ""
+    string banana;                  //holds the number after the calculation
+    in>>numOps;                    
+////////////////////////////////////////////////
+//  loop to keep doing math  until all math
+//  is done.
+//
+//  uses switch statement to decide what to 
+//  do.
+////////////////////////////////////////////////
     for (int i = 0; i < numOps; i++){
         in >> operation;
         switch (operation){
+            
+//if its a plus sign do addition
+//sends number to add funtion 
+// and returns a list pointer
             case '+':
                 in >> num1 >> num2;
                 Num1 = new DLList(num1);
@@ -40,6 +58,9 @@ int main() {
                 //banana = BN.ToString(result, out);
                 //out << banana << endl << endl;
                 break;
+//if its a minus sign do subtraction.
+//sends number to subtraction funtion 
+// and returns a list pointer            
             case '-':
                 in >> num1 >> num2;
                 Num1 = new DLList(num1);
@@ -54,6 +75,9 @@ int main() {
                 //banana = BN.ToString(result, out);
                 //out << banana << endl << endl;
                 break;
+//if its a star do multiplication
+//sends number to multiply funtion 
+// and returns a list pointer
             case '*':
                 in >> num1 >> num2;
                 Num1 = new DLList(num1);

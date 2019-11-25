@@ -1,3 +1,12 @@
+/////////////////////////////////////////////////
+//      BigNum.hpp
+//  Author:     Jered Stevens
+//  Assignment: Program_03
+//  Date:       Nov 24 2019
+//  Description:
+//          Used to perform arithmetic on numbers
+//          too large for a calculator
+/////////////////////////////////////////////////
 #include <string>
 #include "list.hpp"
 
@@ -68,6 +77,9 @@ public:
         return Result;
     }
 
+//  Send 2 BIGNUMBERS to this list and get 
+//  the difference! It'll give you back 
+//  a list pointer!
     DLList* Sub(DLList *bnum1, DLList *bnum2){
         BNum1 = new DLList(*bnum1);
         BNum2 = new DLList(*bnum2);
