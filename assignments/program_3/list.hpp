@@ -37,7 +37,7 @@ public:
     int Size();                 // returns size of list
     void frontSert(int);        // inserts in front
     void endSert(int);          // inserts in back
-    void Print();               // prints contents of list in order
+    void Print(ofstream&);               // prints contents of list in order
     void RevPrint();            // prints contents of list in reverse order
     int Delete();               // deletes and returns tail. moves tail to tail->prev
     bool isEmpty();             //returns true if list is empty
@@ -171,17 +171,17 @@ void DLList::endSert(int data) {
  * 
  *     void
  */
-void DLList::Print() {
-    Node *Temp = Head;
-
+void DLList::Print(ofstream& out) {
+    Node* Temp = Head;
+    
     while (Temp) {
-        cout << Temp->data;
-        if (Temp->Next) {
-            cout << "->";
-        }
+        out << Temp->data;
+        // if (Temp->Next) {
+        //     out << "->";
+        // }
         Temp = Temp->Next;
     }
-    cout << endl;
+    out << endl;
 }
 
 /**

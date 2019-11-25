@@ -161,6 +161,18 @@ public:
      * Traverse list and add the number from each Node to a string. Return
      * that string.
      */
-    string ToString(DLList other);
-
+    // THIS DOESNT WORK AND IDK WHY
+    string ToString(DLList* other, ofstream& out){
+        string result;
+        DLList* Other = new DLList(*other);
+        int digit;
+        int i = 0;
+         while(!Other->isEmpty()){
+              digit = Other->Delete();
+              result[i] = digit;
+              result[i] = (result[i]+48);
+              i++;
+         }
+        return result;
+    }
 };
