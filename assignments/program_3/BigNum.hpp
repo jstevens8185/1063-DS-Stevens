@@ -174,5 +174,5 @@ public:
               i++;
          }
         return result;
-    }
+    };
 };

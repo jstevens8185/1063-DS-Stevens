@@ -3,6 +3,7 @@
 #include <iostream>
 #include <fstream>
 #include "BigNum.hpp"
+#include <string>
 
 using namespace std; 
 
@@ -34,8 +35,10 @@ int main() {
                 Num2->Print(outref);
                 out << "=" << endl;
                 result = BN.Add(Num1,Num2);
-                banana = BN.ToString(result, out);
-                out << banana << endl << endl;
+                result->Print(out);
+                out << endl;
+                //banana = BN.ToString(result, out);
+                //out << banana << endl << endl;
                 break;
             case '-':
                 in >> num1 >> num2;
@@ -46,8 +49,10 @@ int main() {
                 Num2->Print(outref);
                 out << "=" << endl;
                 result = BN.Sub(Num1,Num2);
-                banana = BN.ToString(result, out);
-                out << banana << endl << endl;
+                result->Print(out);
+                out << endl;
+                //banana = BN.ToString(result, out);
+                //out << banana << endl << endl;
                 break;
             case '*':
                 in >> num1 >> num2;
@@ -58,7 +63,8 @@ int main() {
                 Num2->Print(outref);
                 out << "=" << endl;
                 result = BN.Mul(Num1,Num2);
-                banana = BN.ToString(result, out);
+                result->Print(out);
+                //banana = BN.ToString(result, out);
                 out << banana;
                 break;
         }
