@@ -19,8 +19,8 @@ int main() {
     ifstream in;
     ofstream out;
     ofstream& outref = out;
-    out.open("output.txt");
-    in.open("input.txt");
+    out.open("output.num");
+    in.open("input_data.txt");
     int numOps;                     //get the number of times to run
     char operation;                 //get the first operation to perform
     string num1, num2;              //variable to hold the numbers
