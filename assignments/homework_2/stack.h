@@ -25,7 +25,7 @@ class Stack{
     Stack(int);             // overloaded constructor
     bool Push(int);         // Push value onto stack
     int Pop();              // Remove item from top of stack
-    void Print(ofstream &);           // Help inspect values
+    void Print(ofstream &); // Help inspect values
     bool Empty();           // Is stack empty
     bool Full();            // is stack full
     void checkResize();     // Is stack near capacity
